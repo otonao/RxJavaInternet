@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(new Observer<String>() {
                     @Override
                     public void onSubscribe(Disposable d) {
-                        System.out.println("START");
+                        System.out.println("STARTSTART");
                     }
 
                     @Override
