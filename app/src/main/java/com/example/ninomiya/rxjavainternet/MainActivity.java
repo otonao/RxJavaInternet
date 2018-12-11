@@ -68,24 +68,4 @@ public class MainActivity extends AppCompatActivity {
         Button clearButton = findViewById(R.id.clearButton);
         clearButton.setOnClickListener(v -> textView.setText(""));
     }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        TextView textView1 = findViewById(R.id.myTextView);
-        String value = textView1.getText().toString();
-        outState.putString("TEXT_VIEW_STR", value);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-
-        String value = savedInstanceState.getString("TEXT_VIEW_STR");
-        TextView textView1 = findViewById(R.id.myTextView);
-        textView1.setText(value);
-    }
 }
