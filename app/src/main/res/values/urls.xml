@@ -2,61 +2,117 @@
 <resources>
     <string-array name="kosen_url">
         <item>http://www.hakodate-ct.ac.jp/</item>
+        //1.函館
         <item>https://www.tomakomai-ct.ac.jp/</item>
+        //2.苫小牧
         <item>https://www.kushiro-ct.ac.jp/</item>
+        //3.釧路
         <item>http://www.asahikawa-nct.ac.jp/</item>
+        //4.旭川
         <item>http://www.hachinohe-ct.ac.jp/</item>
+        //5.八戸
         <item>https://www.ichinoseki.ac.jp/</item>
+        //6.一関
         <item>https://www.sendai-nct.ac.jp/</item>
+        //7.仙台
         <item>https://www.akita-nct.ac.jp/</item>
+        //8.秋田
         <item>https://www.tsuruoka-nct.ac.jp/</item>
+        //9.鶴岡
         <item>http://www.fukushima-nct.ac.jp/</item>
+        //10.福島
         <item>http://www.ibaraki-ct.ac.jp/</item>
+        //11.茨城
         <item>http://www.oyama-ct.ac.jp/</item>
+        //12.小山
         <item>http://www.gunma-ct.ac.jp/</item>
+        //13.群馬
         <item>http://www.kisarazu.ac.jp/</item>
+        //14.木更津
         <item>https://www.tokyo-ct.ac.jp/</item>
+        //15.東京
         <item>https://www.metro-cit.ac.jp/</item>
+        //16.産業技術
         <item>http://www.salesio-sp.ac.jp/</item>
+        //17.サレジオ
         <item>http://www.nagaoka-ct.ac.jp/</item>
+        //18.長岡
         <item>https://www.nc-toyama.ac.jp/</item>
+        //19.富山
         <item>https://www.ishikawa-nct.ac.jp/</item>
+        //20.石川
         <item>https://www.ict-kanazawa.ac.jp/</item>
+        //21.国際
         <item>https://www.fukui-nct.ac.jp/</item>
+        //22.福井
         <item>http://www.nagano-nct.ac.jp/</item>
+        //23.長野
         <item>http://www.gifu-nct.ac.jp/</item>
+        //24.岐阜
         <item>http://www.numazu-ct.ac.jp/</item>
+        //25.沼津
         <item>https://www.toyota-ct.ac.jp/</item>
+        //26.豊田
         <item>https://www.toba-cmt.ac.jp/</item>
+        //27.鳥羽商船
         <item>http://www.suzuka-ct.ac.jp/</item>
+        //28.鈴鹿
         <item>https://www.ktc.ac.jp/</item>
+        //29.近畿大学
         <item>http://www.maizuru-ct.ac.jp/</item>
+        //30.舞鶴
         <item>https://www2.ct.osakafu-u.ac.jp/</item>
+        //31.大阪
         <item>https://www.akashi.ac.jp/</item>
+        //32.明石
         <item>http://www.kobe-kosen.ac.jp/</item>
+        //33.神戸
         <item>https://www.nara-k.ac.jp/</item>
+        //34.奈良
         <item>https://www.wakayama-nct.ac.jp/</item>
+        //35.和歌山
         <item>https://www.yonago-k.ac.jp/</item>
-        <item>https://www.matsue-ct.jp/m/index.php</item>
+        //36.米子
+        <item>https://www.matsue-ct.jp/m/index.php</item>//37.松江
         <item>http://www.tsuyama-ct.ac.jp/</item>
+        //38.津山
         <item>http://www.hiroshima-cmt.ac.jp/</item>
+        //39.広島
         <item>https://www.kure-nct.ac.jp/</item>
+        //40.呉
         <item>http://www.tokuyama.ac.jp/</item>
+        //41.徳山
         <item>http://www.ube-k.ac.jp/</item>
+        //42.宇部
         <item>http://www.oshima-k.ac.jp/</item>
+        //43.大島
         <item>https://www.anan-nct.ac.jp/</item>
+        //44.阿南
         <item>http://www.kagawa-nct.ac.jp/</item>
+        //45.香川
         <item>http://www.niihama-nct.ac.jp/</item>
+        //46.新居浜
         <item>http://www.yuge.ac.jp/</item>
+        //47.弓削
         <item>http://www.kochi-ct.ac.jp/</item>
+        //48.高知
         <item>https://www.kct.ac.jp/</item>
+        //49.北九州
         <item>http://www.kurume-nct.ac.jp/</item>
+        //50.久留米
         <item>https://www.ariake-nct.ac.jp/</item>
+        //51.有明
         <item>http://www.sasebo.ac.jp/snct/</item>
+        //52.佐世保
         <item>https://kumamoto-nct.ac.jp/</item>
+        //53.熊本
         <item>http://www.oita-ct.ac.jp/</item>
+        //54.大分
         <item>http://www.miyakonojo-nct.ac.jp/</item>
+        //55.都城
         <item>http://www.kagoshima-ct.ac.jp/</item>
+        //56.鹿児島
         <item>http://www.okinawa-ct.ac.jp/</item>
+        //57.沖縄
     </string-array>
 </resources>
