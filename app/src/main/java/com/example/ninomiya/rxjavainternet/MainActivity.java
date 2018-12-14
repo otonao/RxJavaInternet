@@ -9,9 +9,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -71,12 +68,11 @@ public class MainActivity extends AppCompatActivity {
         };
 
         Observable.fromArray(urls)
-                .take(20)
+                .take(1)
                 .subscribeOn(Schedulers.io())
                 .map(HtmlGet::htmlGet)
                 .map(HtmlGet::titleGet)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(observer);
-
     }
 }
