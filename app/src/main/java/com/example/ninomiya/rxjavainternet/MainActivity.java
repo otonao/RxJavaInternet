@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
         Observable.fromArray(urls)
-                .take(1)
+                .take(10)
                 .subscribeOn(Schedulers.io())
                 .map(HtmlGet::htmlGet)
                 .map(HtmlGet::titleGet)
