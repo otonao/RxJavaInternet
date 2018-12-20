@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
     private ScrollView scrollView;
+    //private ProgressBar progressBar;
+    //private int val=0, urlCount =57;
     String[] urls;
 
     @Override
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.myTextView);
         scrollView = findViewById(R.id.scroll);
+        //progressBar = findViewById(R.id.progressBar);
+        //progressBar.setMax(urlCount);
+        //progressBar.setVisibility(android.widget.ProgressBar.INVISIBLE);
 
         Button getButton = findViewById(R.id.htmlGetButton);
         getButton.setOnClickListener(v -> asyncProcess(this));
@@ -45,10 +50,15 @@ public class MainActivity extends AppCompatActivity {
         Observer<String> observer = new Observer<String>() {
             @Override
             public void onSubscribe(Disposable d) {
+                //progressBar.setProgress(0);
+                //progressBar.setVisibility(android.widget.ProgressBar.VISIBLE);
             }
 
             @Override
             public void onNext(String s) {
+                //val+=1;
+                //progressBar.setProgress(val);
+                //textView.setText(s);
                 textView.append(s + "\n\n");
                 scrollView.scrollTo(0, textView.getBottom());
             }
@@ -61,16 +71,22 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onComplete() {
+                //progressBar.setVisibility(android.widget.ProgressBar.INVISIBLE);
+
+                scrollView.scrollTo(0, textView.getBottom());
+
                 long end = System.currentTimeMillis();
                 Toast.makeText(context, (end - start)  + "ms", Toast.LENGTH_LONG).show();
-                scrollView.scrollTo(0, textView.getBottom());
             }
         };
 
         Observable.fromArray(urls)
                 .subscribeOn(Schedulers.io())
+                //.take(1)
                 .map(HtmlGet::htmlGet)
                 .map(HtmlGet::titleGet)
+                //.scan((s1,s2)->s1+s2)
+                //.doOnComplete(s->textView.append(s))
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(observer);
     }
